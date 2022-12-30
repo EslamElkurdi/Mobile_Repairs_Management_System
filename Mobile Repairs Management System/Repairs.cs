@@ -38,7 +38,15 @@ namespace Mobile_Repairs_Management_System
             SpareCb.DataSource = Con.GetData(Query);
         }
 
-       
+        private void GetCost()
+        {
+            string Query = "Select * from SparTbl where SpCode = {0}";
+            Query = string.Format(Query, SpareCb.SelectedValue.ToString());
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                spcostTb.Text = dr["SpCost"].ToString();
+            }
+        }
 
         private void showRepairs()
         {
