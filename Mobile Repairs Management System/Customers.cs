@@ -12,9 +12,20 @@ namespace Mobile_Repairs_Management_System
 {
     public partial class Customers : Form
     {
+
+        Functions Con;
         public Customers()
         {
             InitializeComponent();
+            Con = new Functions();
+            showCustomers();
+
+        }
+
+        private void showCustomers() 
+        {
+            string Query = "Select * from CustomerTbl";
+            CustomersGridView.DataSource = Con.GetData(Query);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -33,6 +44,11 @@ namespace Mobile_Repairs_Management_System
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }
