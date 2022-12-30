@@ -1,7 +1,7 @@
 ﻿
 namespace Mobile_Repairs_Management_System
 {
-    partial class Form1
+    partial class Parts
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,17 @@ namespace Mobile_Repairs_Management_System
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // Parts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1515, 831);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "Parts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sports";
             this.ResumeLayout(false);
 
         }
@@ -46,4 +49,3 @@ namespace Mobile_Repairs_Management_System
         #endregion
     }
 }
-

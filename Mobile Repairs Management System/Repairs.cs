@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Mobile_Repairs_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Repairs : Form
     {
-        public Form1()
+        public Repairs()
         {
             InitializeComponent();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
