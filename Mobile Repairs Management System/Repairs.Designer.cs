@@ -87,6 +87,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.Size = new System.Drawing.Size(226, 34);
             this.guna2TextBox4.TabIndex = 29;
+            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // label5
             // 
@@ -97,6 +98,7 @@ namespace Mobile_Repairs_Management_System
             this.label5.Size = new System.Drawing.Size(169, 29);
             this.label5.TabIndex = 30;
             this.label5.Text = "Device Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // guna2TextBox5
             // 
@@ -117,6 +119,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox5.SelectedText = "";
             this.guna2TextBox5.Size = new System.Drawing.Size(226, 34);
             this.guna2TextBox5.TabIndex = 31;
+            this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
             // 
             // label6
             // 
@@ -127,6 +130,7 @@ namespace Mobile_Repairs_Management_System
             this.label6.Size = new System.Drawing.Size(173, 29);
             this.label6.TabIndex = 32;
             this.label6.Text = "Device Model";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2TextBox6
             // 
@@ -147,6 +151,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.Size = new System.Drawing.Size(226, 34);
             this.guna2TextBox6.TabIndex = 33;
+            this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
             // 
             // label7
             // 
@@ -157,6 +162,7 @@ namespace Mobile_Repairs_Management_System
             this.label7.Size = new System.Drawing.Size(112, 29);
             this.label7.TabIndex = 34;
             this.label7.Text = "Problem";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -167,6 +173,7 @@ namespace Mobile_Repairs_Management_System
             this.label8.Size = new System.Drawing.Size(125, 29);
             this.label8.TabIndex = 36;
             this.label8.Text = "Customer";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // guna2TextBox8
             // 
@@ -187,6 +194,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox8.SelectedText = "";
             this.guna2TextBox8.Size = new System.Drawing.Size(123, 34);
             this.guna2TextBox8.TabIndex = 37;
+            this.guna2TextBox8.TextChanged += new System.EventHandler(this.guna2TextBox8_TextChanged);
             // 
             // guna2TextBox9
             // 
@@ -207,6 +215,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox9.SelectedText = "";
             this.guna2TextBox9.Size = new System.Drawing.Size(123, 34);
             this.guna2TextBox9.TabIndex = 38;
+            this.guna2TextBox9.TextChanged += new System.EventHandler(this.guna2TextBox9_TextChanged);
             // 
             // label10
             // 
@@ -217,6 +226,7 @@ namespace Mobile_Repairs_Management_System
             this.label10.Size = new System.Drawing.Size(111, 25);
             this.label10.TabIndex = 40;
             this.label10.Text = "Spare Cost";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -227,6 +237,7 @@ namespace Mobile_Repairs_Management_System
             this.label11.Size = new System.Drawing.Size(102, 25);
             this.label11.TabIndex = 41;
             this.label11.Text = "Total Cost";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -240,6 +251,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(256, 36);
             this.guna2DateTimePicker1.TabIndex = 42;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 30, 10, 6, 23, 310);
+            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
             // guna2ComboBox1
             // 
@@ -255,6 +267,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(256, 36);
             this.guna2ComboBox1.TabIndex = 43;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // guna2ComboBox2
             // 
@@ -270,6 +283,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(256, 36);
             this.guna2ComboBox2.TabIndex = 44;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -324,6 +338,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(226, 34);
             this.guna2TextBox3.TabIndex = 17;
+            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // Save
             // 
@@ -338,6 +353,7 @@ namespace Mobile_Repairs_Management_System
             this.Save.Size = new System.Drawing.Size(141, 43);
             this.Save.TabIndex = 18;
             this.Save.Text = "Save";
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // Update
             // 
@@ -353,6 +369,7 @@ namespace Mobile_Repairs_Management_System
             this.Update.Size = new System.Drawing.Size(141, 43);
             this.Update.TabIndex = 19;
             this.Update.Text = "Update";
+            this.Update.Click += new System.EventHandler(this.Update_Click);
             // 
             // Delete
             // 
@@ -368,6 +385,7 @@ namespace Mobile_Repairs_Management_System
             this.Delete.Size = new System.Drawing.Size(141, 43);
             this.Delete.TabIndex = 20;
             this.Delete.Text = "Delete";
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // panel3
             // 
@@ -376,6 +394,7 @@ namespace Mobile_Repairs_Management_System
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1431, 10);
             this.panel3.TabIndex = 21;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 
@@ -386,6 +405,7 @@ namespace Mobile_Repairs_Management_System
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -395,6 +415,7 @@ namespace Mobile_Repairs_Management_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(97, 861);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -405,6 +426,7 @@ namespace Mobile_Repairs_Management_System
             this.label1.Size = new System.Drawing.Size(511, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = "Mobile Repairs Management System";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -415,6 +437,7 @@ namespace Mobile_Repairs_Management_System
             this.label3.Size = new System.Drawing.Size(152, 29);
             this.label3.TabIndex = 24;
             this.label3.Text = "Repair Date";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -425,6 +448,7 @@ namespace Mobile_Repairs_Management_System
             this.label4.Size = new System.Drawing.Size(132, 29);
             this.label4.TabIndex = 25;
             this.label4.Text = "Customer ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -435,6 +459,7 @@ namespace Mobile_Repairs_Management_System
             this.label2.Size = new System.Drawing.Size(188, 29);
             this.label2.TabIndex = 26;
             this.label2.Text = "Phone Number";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel4
             // 
@@ -443,6 +468,7 @@ namespace Mobile_Repairs_Management_System
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 596);
             this.panel4.TabIndex = 27;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2DataGridView1
             // 
@@ -495,6 +521,7 @@ namespace Mobile_Repairs_Management_System
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // Repairs
             // 
