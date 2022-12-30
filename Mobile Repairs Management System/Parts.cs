@@ -101,5 +101,33 @@ namespace Mobile_Repairs_Management_System
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PartCost.Text == "" || PartName.Text == "")
+                {
+                    MessageBox.Show("Missing data");
+                }
+                else
+                {
+                 
+                    String PName = PartName.Text;
+                    int cost = Convert.ToInt32(PartCost.Text);
+                    string Query = "Update SparTbl set SpName ='{0}', SpCost ={1} where SpCode={2}";
+                    Query = string.Format(Query, PName, cost, key);
+                    Con.SetData(Query);
+                    MessageBox.Show("Part Updated...");
+                    showSpares();
+                    clear();
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
