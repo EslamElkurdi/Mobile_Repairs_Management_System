@@ -28,6 +28,12 @@ namespace Mobile_Repairs_Management_System
             CustomersGridView.DataSource = Con.GetData(Query);
         }
 
+        private void clear() {
+            CustNameTb.Text = "";
+            CustPhoneTb.Text = "";
+            CustAddressTb.Text = "";
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -66,6 +72,7 @@ namespace Mobile_Repairs_Management_System
                     Con.SetData(Query);
                     MessageBox.Show("Customer Added...");
                     showCustomers();
+                    clear();
                 }
             }
             catch (Exception Ex)
@@ -108,7 +115,8 @@ namespace Mobile_Repairs_Management_System
                     Con.SetData(Query);
                     MessageBox.Show("Customer Deleted...");
                     showCustomers();
-                   
+                    clear();
+
                 }
             }
             catch (Exception Ex)
@@ -135,7 +143,8 @@ namespace Mobile_Repairs_Management_System
                     Con.SetData(Query);
                     MessageBox.Show("Customer Updated...");
                     showCustomers();
-                    
+                    clear();
+
                 }
             }
             catch (Exception Ex)
