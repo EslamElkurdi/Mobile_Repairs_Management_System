@@ -25,5 +25,13 @@ namespace Mobile_Repairs_Management_System
             cmd.Connection = con;
         }
 
+        public DataTable GetData(string Query)
+        {
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query, con);
+            sda.Fill(dt);
+            return dt;
+        }
+
     }
 }
