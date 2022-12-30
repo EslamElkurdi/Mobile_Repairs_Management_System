@@ -50,7 +50,28 @@ namespace Mobile_Repairs_Management_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (CustNameTb.Text == "" || CustPhoneTb.Text == "" || CustAddressTb.Text == "")
+                {
+                    MessageBox.Show("Missing data");
+                }
+                else
+                {
+                    String CName = CustNameTb.Text;
+                    String CPhone = CustPhoneTb.Text;
+                    String CAdd = CustAddressTb.Text;
+                    string Query = "insert into  CustomerTbl values ('{0}','{1}','{2}','{3}')";
+                    Query = string.Format(Query, CName, CPhone, CAdd);
+                    Con.SetData(Query);
+                    MessageBox.Show("Added...");
+                    showCustomers();
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }
