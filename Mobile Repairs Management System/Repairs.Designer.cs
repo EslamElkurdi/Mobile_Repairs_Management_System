@@ -46,7 +46,7 @@ namespace Mobile_Repairs_Management_System
             this.label11 = new System.Windows.Forms.Label();
             this.RepDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.CustCb = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.SpareCb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.RepairDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -170,9 +170,9 @@ namespace Mobile_Repairs_Management_System
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 512);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 29);
+            this.label8.Size = new System.Drawing.Size(83, 29);
             this.label8.TabIndex = 36;
-            this.label8.Text = "Customer";
+            this.label8.Text = "Spare";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // spcostTb
@@ -269,25 +269,25 @@ namespace Mobile_Repairs_Management_System
             this.CustCb.TabIndex = 43;
             this.CustCb.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // guna2ComboBox2
+            // SpareCb
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(9, 544);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(256, 36);
-            this.guna2ComboBox2.TabIndex = 44;
-            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            this.SpareCb.BackColor = System.Drawing.Color.Transparent;
+            this.SpareCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SpareCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SpareCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SpareCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SpareCb.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.SpareCb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.SpareCb.ItemHeight = 30;
+            this.SpareCb.Location = new System.Drawing.Point(9, 544);
+            this.SpareCb.Name = "SpareCb";
+            this.SpareCb.Size = new System.Drawing.Size(256, 36);
+            this.SpareCb.TabIndex = 44;
+            this.SpareCb.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2ComboBox2);
+            this.panel2.Controls.Add(this.SpareCb);
             this.panel2.Controls.Add(this.CustCb);
             this.panel2.Controls.Add(this.RepDate);
             this.panel2.Controls.Add(this.label11);
@@ -559,7 +559,7 @@ namespace Mobile_Repairs_Management_System
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2DateTimePicker RepDate;
         private Guna.UI2.WinForms.Guna2ComboBox CustCb;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox SpareCb;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2DataGridView RepairDataGridView;
         private System.Windows.Forms.Panel panel4;

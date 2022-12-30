@@ -26,6 +26,19 @@ namespace Mobile_Repairs_Management_System
             RepairDataGridView.DataSource = Con.GetData(Query);
         }
 
+        private void clear()
+        {
+            CustCb.SelectedIndex = -1;
+            PhoneTb.Text = "";
+            DeviceNameTb.Text = "";
+            DeviceModelTb.Text = "";
+            ProblemTb.Text = "";
+            SpareCb.SelectedIndex = -1;
+            TotalCostTb.Text = "";
+            spcostTb.Text = "";
+
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
