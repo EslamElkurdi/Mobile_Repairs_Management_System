@@ -20,6 +20,12 @@ namespace Mobile_Repairs_Management_System
             showSpares();
         }
 
+        private void clear()
+        {
+            PartName.Text = "";
+            PartCost.Text = "";
+        }
+
         private void showSpares()
         {
             string Query = "Select * from SparTbl";
