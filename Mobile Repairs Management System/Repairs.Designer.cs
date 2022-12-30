@@ -331,7 +331,7 @@ namespace Mobile_Repairs_Management_System
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.RepairDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.RepairDataGridView.ColumnHeadersHeight = 4;
+            this.RepairDataGridView.ColumnHeadersHeight = 26;
             this.RepairDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -347,7 +347,7 @@ namespace Mobile_Repairs_Management_System
             this.RepairDataGridView.RowHeadersVisible = false;
             this.RepairDataGridView.RowHeadersWidth = 51;
             this.RepairDataGridView.RowTemplate.Height = 24;
-            this.RepairDataGridView.Size = new System.Drawing.Size(1081, 713);
+            this.RepairDataGridView.Size = new System.Drawing.Size(1104, 713);
             this.RepairDataGridView.TabIndex = 28;
             this.RepairDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.RepairDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -361,7 +361,7 @@ namespace Mobile_Repairs_Management_System
             this.RepairDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RepairDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.RepairDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.RepairDataGridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.RepairDataGridView.ThemeStyle.HeaderStyle.Height = 26;
             this.RepairDataGridView.ThemeStyle.ReadOnly = false;
             this.RepairDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.RepairDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

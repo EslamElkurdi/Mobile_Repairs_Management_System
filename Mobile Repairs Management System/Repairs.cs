@@ -18,7 +18,11 @@ namespace Mobile_Repairs_Management_System
             InitializeComponent();
             Con = new Functions();
             showRepairs();
+            
+            
         }
+
+        
 
         private void showRepairs()
         {
@@ -159,9 +163,44 @@ namespace Mobile_Repairs_Management_System
 
         }
 
+        //DeviceNameTb.Text = "";
+        //DeviceModelTb.Text = "";
+        //    ProblemTb.Text = "";
+        //    SpareCb.SelectedIndex = -1;
+        //    TotalCostTb.Text = "";
+        //    spcostTb.Text = "";
+
         private void Save_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (CustCb.SelectedIndex == -1 || PhoneTb.Text == "" || DeviceNameTb.Text == "" || DeviceModelTb.Text == "" || ProblemTb.Text == "" || SpareCb.SelectedIndex == -1 || TotalCostTb.Text == "" || spcostTb.Text == "")
+                {
+                    MessageBox.Show("Missing data");
+                }
+                else
+                {
+                    String RDate = RepDate.Value.Date.ToString();
+                    int Customer = Convert.ToInt32(CustCb.SelectedValue.ToString());
+                    String CPhone = PhoneTb.Text;
+                    String DeviceName = DeviceNameTb.Text;
+                    String DeviceModel = DeviceModelTb.Text;
+                    String Problem = ProblemTb.Text;
+                    int Spare = Convert.ToInt32(SpareCb.SelectedValue.ToString());
+                    int Total = Convert.ToInt32(TotalCostTb.Text);
 
+                    string Query = "insert into  RepairTbl values ('{0}',{1},'{2}','{3}','{4}','{5}',{6},{7})";
+                    Query = string.Format(Query, RDate, Customer, CPhone, DeviceName, DeviceModel, Problem, Spare, Total);
+                    Con.SetData(Query);
+                    MessageBox.Show("Repairs Added...");
+                    showRepairs();
+                    clear();
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
         private void Update_Click(object sender, EventArgs e)
