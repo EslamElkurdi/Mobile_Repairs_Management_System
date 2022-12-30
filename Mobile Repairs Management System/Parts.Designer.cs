@@ -154,7 +154,7 @@ namespace Mobile_Repairs_Management_System
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.PartsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.PartsGridView.ColumnHeadersHeight = 4;
+            this.PartsGridView.ColumnHeadersHeight = 26;
             this.PartsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -184,7 +184,7 @@ namespace Mobile_Repairs_Management_System
             this.PartsGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PartsGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.PartsGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PartsGridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.PartsGridView.ThemeStyle.HeaderStyle.Height = 26;
             this.PartsGridView.ThemeStyle.ReadOnly = false;
             this.PartsGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.PartsGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -193,6 +193,7 @@ namespace Mobile_Repairs_Management_System
             this.PartsGridView.ThemeStyle.RowsStyle.Height = 24;
             this.PartsGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PartsGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PartsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartsGridView_CellContentClick);
             // 
             // panel2
             // 
