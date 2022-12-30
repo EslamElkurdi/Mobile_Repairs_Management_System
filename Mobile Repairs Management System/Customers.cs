@@ -32,6 +32,7 @@ namespace Mobile_Repairs_Management_System
             CustNameTb.Text = "";
             CustPhoneTb.Text = "";
             CustAddressTb.Text = "";
+            key = 0;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

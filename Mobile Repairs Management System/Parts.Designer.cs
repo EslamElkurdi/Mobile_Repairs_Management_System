@@ -106,6 +106,7 @@ namespace Mobile_Repairs_Management_System
             this.SaveBtn.Size = new System.Drawing.Size(141, 43);
             this.SaveBtn.TabIndex = 18;
             this.SaveBtn.Text = "Save";
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // panel3
             // 
