@@ -17,7 +17,13 @@ namespace Mobile_Repairs_Management_System
         private SqlDataAdapter sda;
         private string ConStr;
 
-
+        public Functions()
+        {
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\MobileRepairDb.mdf;Integrated Security=True;Connect Timeout=30";
+            con = new SqlConnection(ConStr);
+            cmd = new SqlCommand();
+            cmd.Connection = con;
+        }
 
     }
 }
