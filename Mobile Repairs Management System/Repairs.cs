@@ -30,6 +30,16 @@ namespace Mobile_Repairs_Management_System
             CustCb.DataSource = Con.GetData(Query);
         }
 
+        private void GetSpare()
+        {
+            string Query = "Select * from SparTbl";
+            SpareCb.DisplayMember = Con.GetData(Query).Columns["SpName"].ToString();
+            SpareCb.ValueMember = Con.GetData(Query).Columns["SpCode"].ToString();
+            SpareCb.DataSource = Con.GetData(Query);
+        }
+
+       
+
         private void showRepairs()
         {
             string Query = "Select * from RepairTbl";
