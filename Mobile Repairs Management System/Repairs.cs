@@ -12,9 +12,18 @@ namespace Mobile_Repairs_Management_System
 {
     public partial class Repairs : Form
     {
+        Functions Con;
         public Repairs()
         {
             InitializeComponent();
+            Con = new Functions();
+            showRepairs();
+        }
+
+        private void showRepairs()
+        {
+            string Query = "Select * from RepairTbl";
+            RepairDataGridView.DataSource = Con.GetData(Query);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
