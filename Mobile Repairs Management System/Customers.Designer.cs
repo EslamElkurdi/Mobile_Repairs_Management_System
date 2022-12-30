@@ -226,7 +226,7 @@ namespace Mobile_Repairs_Management_System
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.CustomersGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.CustomersGridView.ColumnHeadersHeight = 4;
+            this.CustomersGridView.ColumnHeadersHeight = 26;
             this.CustomersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -256,7 +256,7 @@ namespace Mobile_Repairs_Management_System
             this.CustomersGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomersGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.CustomersGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.CustomersGridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.CustomersGridView.ThemeStyle.HeaderStyle.Height = 26;
             this.CustomersGridView.ThemeStyle.ReadOnly = false;
             this.CustomersGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.CustomersGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -265,6 +265,7 @@ namespace Mobile_Repairs_Management_System
             this.CustomersGridView.ThemeStyle.RowsStyle.Height = 24;
             this.CustomersGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.CustomersGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CustomersGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomersGridView_CellContentClick);
             // 
             // panel2
             // 
