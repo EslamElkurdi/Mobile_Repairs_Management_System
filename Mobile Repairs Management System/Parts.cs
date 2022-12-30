@@ -62,7 +62,19 @@ namespace Mobile_Repairs_Management_System
         int key = 0;
         private void PartsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            PartName.Text = PartsGridView.SelectedRows[0].Cells[1].Value.ToString();
+            PartCost.Text = PartsGridView.SelectedRows[0].Cells[2].Value.ToString();
+            
+
+            if (PartName.Text == "")
+            {
+                key = 0; 
+            }
+            else
+            {
+                key = Convert.ToInt32(PartsGridView.SelectedRows[0].Cells[0].Value.ToString());
+            }
+
         }
     }
 }
