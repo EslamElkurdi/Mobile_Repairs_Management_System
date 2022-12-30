@@ -92,5 +92,56 @@ namespace Mobile_Repairs_Management_System
 
 
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (key == 0)
+                {
+                    MessageBox.Show("Missing data");
+                }
+                else
+                {
+                    string Query = "Delete from CustomerTbl where CustCode={0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    MessageBox.Show("Customer Deleted...");
+                    showCustomers();
+                   
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CustNameTb.Text == "" || CustPhoneTb.Text == "" || CustAddressTb.Text == "")
+                {
+                    MessageBox.Show("Missing data");
+                }
+                else
+                {
+                    String CName = CustNameTb.Text;
+                    String CPhone = CustPhoneTb.Text;
+                    String CAdd = CustAddressTb.Text;
+                    string Query = "Update CustomerTbl set CustName ='{0}', CustPhone ='{1}',CustAdd ='{2}' where CustCode={3}";
+                    Query = string.Format(Query,CName, CPhone, CAdd , key);
+                    Con.SetData(Query);
+                    MessageBox.Show("Customer Updated...");
+                    showCustomers();
+                    
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
