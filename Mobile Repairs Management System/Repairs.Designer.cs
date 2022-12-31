@@ -192,7 +192,7 @@ namespace Mobile_Repairs_Management_System
             this.spcostTb.PasswordChar = '\0';
             this.spcostTb.PlaceholderText = "";
             this.spcostTb.SelectedText = "";
-            this.spcostTb.Size = new System.Drawing.Size(123, 34);
+            this.spcostTb.Size = new System.Drawing.Size(108, 34);
             this.spcostTb.TabIndex = 37;
             this.spcostTb.TextChanged += new System.EventHandler(this.guna2TextBox8_TextChanged);
             // 
@@ -207,13 +207,13 @@ namespace Mobile_Repairs_Management_System
             this.TotalCostTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TotalCostTb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TotalCostTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TotalCostTb.Location = new System.Drawing.Point(141, 612);
+            this.TotalCostTb.Location = new System.Drawing.Point(130, 612);
             this.TotalCostTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TotalCostTb.Name = "TotalCostTb";
             this.TotalCostTb.PasswordChar = '\0';
             this.TotalCostTb.PlaceholderText = "";
             this.TotalCostTb.SelectedText = "";
-            this.TotalCostTb.Size = new System.Drawing.Size(123, 34);
+            this.TotalCostTb.Size = new System.Drawing.Size(114, 34);
             this.TotalCostTb.TabIndex = 38;
             this.TotalCostTb.TextChanged += new System.EventHandler(this.guna2TextBox9_TextChanged);
             // 
@@ -232,11 +232,11 @@ namespace Mobile_Repairs_Management_System
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(136, 583);
+            this.label11.Location = new System.Drawing.Point(125, 583);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 25);
+            this.label11.Size = new System.Drawing.Size(114, 25);
             this.label11.TabIndex = 41;
-            this.label11.Text = "Total Cost";
+            this.label11.Text = "Repair Cost";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // RepDate
@@ -248,7 +248,7 @@ namespace Mobile_Repairs_Management_System
             this.RepDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.RepDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.RepDate.Name = "RepDate";
-            this.RepDate.Size = new System.Drawing.Size(256, 36);
+            this.RepDate.Size = new System.Drawing.Size(226, 36);
             this.RepDate.TabIndex = 42;
             this.RepDate.Value = new System.DateTime(2022, 12, 30, 10, 6, 23, 310);
             this.RepDate.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
@@ -265,7 +265,7 @@ namespace Mobile_Repairs_Management_System
             this.CustCb.ItemHeight = 30;
             this.CustCb.Location = new System.Drawing.Point(12, 189);
             this.CustCb.Name = "CustCb";
-            this.CustCb.Size = new System.Drawing.Size(256, 36);
+            this.CustCb.Size = new System.Drawing.Size(226, 36);
             this.CustCb.TabIndex = 43;
             this.CustCb.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
@@ -281,9 +281,10 @@ namespace Mobile_Repairs_Management_System
             this.SpareCb.ItemHeight = 30;
             this.SpareCb.Location = new System.Drawing.Point(9, 544);
             this.SpareCb.Name = "SpareCb";
-            this.SpareCb.Size = new System.Drawing.Size(256, 36);
+            this.SpareCb.Size = new System.Drawing.Size(229, 36);
             this.SpareCb.TabIndex = 44;
             this.SpareCb.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            this.SpareCb.SelectionChangeCommitted += new System.EventHandler(this.SpareCb_SelectionChangeCommitted);
             // 
             // panel2
             // 
@@ -315,7 +316,7 @@ namespace Mobile_Repairs_Management_System
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(92, -12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1440, 861);
+            this.panel2.Size = new System.Drawing.Size(1690, 981);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -342,12 +343,12 @@ namespace Mobile_Repairs_Management_System
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.RepairDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.RepairDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.RepairDataGridView.Location = new System.Drawing.Point(333, 119);
+            this.RepairDataGridView.Location = new System.Drawing.Point(266, 119);
             this.RepairDataGridView.Name = "RepairDataGridView";
             this.RepairDataGridView.RowHeadersVisible = false;
             this.RepairDataGridView.RowHeadersWidth = 51;
             this.RepairDataGridView.RowTemplate.Height = 24;
-            this.RepairDataGridView.Size = new System.Drawing.Size(1104, 713);
+            this.RepairDataGridView.Size = new System.Drawing.Size(1408, 807);
             this.RepairDataGridView.TabIndex = 28;
             this.RepairDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.RepairDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -375,7 +376,7 @@ namespace Mobile_Repairs_Management_System
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel4.Location = new System.Drawing.Point(317, 119);
+            this.panel4.Location = new System.Drawing.Point(250, 119);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 596);
             this.panel4.TabIndex = 27;
@@ -430,7 +431,7 @@ namespace Mobile_Repairs_Management_System
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel3.Location = new System.Drawing.Point(9, 55);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1431, 10);
+            this.panel3.Size = new System.Drawing.Size(1554, 10);
             this.panel3.TabIndex = 21;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -443,7 +444,7 @@ namespace Mobile_Repairs_Management_System
             this.DeleteBtn.FillColor = System.Drawing.Color.Red;
             this.DeleteBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(82, 721);
+            this.DeleteBtn.Location = new System.Drawing.Point(54, 730);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(141, 43);
             this.DeleteBtn.TabIndex = 20;
@@ -459,7 +460,7 @@ namespace Mobile_Repairs_Management_System
             this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.UpdateBtn.Location = new System.Drawing.Point(157, 672);
+            this.UpdateBtn.Location = new System.Drawing.Point(53, 779);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Size = new System.Drawing.Size(141, 43);
             this.UpdateBtn.TabIndex = 19;
@@ -474,7 +475,7 @@ namespace Mobile_Repairs_Management_System
             this.SaveBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.SaveBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBtn.Location = new System.Drawing.Point(10, 672);
+            this.SaveBtn.Location = new System.Drawing.Point(52, 681);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(141, 43);
             this.SaveBtn.TabIndex = 18;
@@ -519,7 +520,7 @@ namespace Mobile_Repairs_Management_System
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, -12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(97, 861);
+            this.panel1.Size = new System.Drawing.Size(97, 1006);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -528,7 +529,7 @@ namespace Mobile_Repairs_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1549, 847);
+            this.ClientSize = new System.Drawing.Size(1794, 981);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

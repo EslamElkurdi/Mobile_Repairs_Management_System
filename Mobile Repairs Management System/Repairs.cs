@@ -19,6 +19,7 @@ namespace Mobile_Repairs_Management_System
             Con = new Functions();
             showRepairs();
             GetCustomer();
+            GetSpare();
             
         }
 
@@ -187,12 +188,7 @@ namespace Mobile_Repairs_Management_System
 
         }
 
-        //DeviceNameTb.Text = "";
-        //DeviceModelTb.Text = "";
-        //    ProblemTb.Text = "";
-        //    SpareCb.SelectedIndex = -1;
-        //    TotalCostTb.Text = "";
-        //    spcostTb.Text = "";
+        
 
         private void Save_Click(object sender, EventArgs e)
         {
@@ -213,10 +209,12 @@ namespace Mobile_Repairs_Management_System
                     int Spare = Convert.ToInt32(SpareCb.SelectedValue.ToString());
                     int Total = Convert.ToInt32(TotalCostTb.Text);
 
+                    int GrdTotal = Convert.ToInt32(spcostTb.Text) + Total;
+
                     string Query = "insert into  RepairTbl values ('{0}',{1},'{2}','{3}','{4}','{5}',{6},{7})";
-                    Query = string.Format(Query, RDate, Customer, CPhone, DeviceName, DeviceModel, Problem, Spare, Total);
+                    Query = string.Format(Query, RDate, Customer, CPhone, DeviceName, DeviceModel, Problem, Spare, GrdTotal);
                     Con.SetData(Query);
-                    MessageBox.Show("Repairs Added...");
+                    MessageBox.Show("Repair Added...");
                     showRepairs();
                     clear();
                 }
@@ -229,17 +227,23 @@ namespace Mobile_Repairs_Management_System
 
         private void Update_Click(object sender, EventArgs e)
         {
-
         }
+
 
         private void label8_Click(object sender, EventArgs e)
         {
 
         }
 
+        int key = 0;
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            key = Convert.ToInt32(RepairDataGridView.SelectedRows[0].Cells[0].Value.ToString());
+        }
 
+        private void SpareCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {   
+            GetCost();
         }
     }
 }
