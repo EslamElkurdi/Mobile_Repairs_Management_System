@@ -33,7 +33,7 @@ namespace Mobile_Repairs_Management_System
             {
                 MessageBox.Show("Missing Data !!!!");
             }
-            else if (Username.Text == "admin" && Password.Text == "admin")
+            else if (Username.Text == "Admin" && Password.Text == "Password")
             {
                 Customers Custform = new Customers();
                 Custform.Show();
@@ -45,6 +45,11 @@ namespace Mobile_Repairs_Management_System
                 Password.Text = "";
 
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

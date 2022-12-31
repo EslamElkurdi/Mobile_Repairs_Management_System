@@ -36,9 +36,11 @@ namespace Mobile_Repairs_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.Username = new Guna.UI2.WinForms.Guna2TextBox();
             this.Password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -143,6 +145,18 @@ namespace Mobile_Repairs_Management_System
             this.Password.TabIndex = 17;
             this.Password.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Mobile_Repairs_Management_System.Properties.Resources.WhatsApp_Image_2022_12_30_at_14_58_48;
+            this.pictureBox3.Location = new System.Drawing.Point(1041, 23);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(71, 78);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Mobile_Repairs_Management_System.Properties.Resources.personal;
@@ -170,6 +184,7 @@ namespace Mobile_Repairs_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 737);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.pictureBox1);
@@ -183,6 +198,7 @@ namespace Mobile_Repairs_Management_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -201,5 +217,6 @@ namespace Mobile_Repairs_Management_System
         private Guna.UI2.WinForms.Guna2TextBox Username;
         private Guna.UI2.WinForms.Guna2TextBox Password;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
