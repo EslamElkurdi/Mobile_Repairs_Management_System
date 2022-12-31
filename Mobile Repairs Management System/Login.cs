@@ -29,7 +29,22 @@ namespace Mobile_Repairs_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Username.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Missing Data !!!!");
+            }
+            else if (Username.Text == "admin" && Password.Text == "admin")
+            {
+                Customers Custform = new Customers();
+                Custform.Show();
+                this.Hide();
+            }
+            else
+            {
+                Username.Text = "";
+                Password.Text = "";
 
+            }
         }
     }
 }

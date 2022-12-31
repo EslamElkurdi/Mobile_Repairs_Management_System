@@ -34,8 +34,8 @@ namespace Mobile_Repairs_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userNameTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Username = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Password = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -101,47 +101,47 @@ namespace Mobile_Repairs_Management_System
             this.panel1.Size = new System.Drawing.Size(322, 737);
             this.panel1.TabIndex = 8;
             // 
-            // userNameTb
+            // Username
             // 
-            this.userNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userNameTb.DefaultText = "";
-            this.userNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.userNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.userNameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.userNameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.userNameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.userNameTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.userNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.userNameTb.Location = new System.Drawing.Point(539, 324);
-            this.userNameTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userNameTb.Name = "userNameTb";
-            this.userNameTb.PasswordChar = '\0';
-            this.userNameTb.PlaceholderText = "";
-            this.userNameTb.SelectedText = "";
-            this.userNameTb.Size = new System.Drawing.Size(390, 48);
-            this.userNameTb.TabIndex = 16;
-            this.userNameTb.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.Username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Username.DefaultText = "";
+            this.Username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Username.Location = new System.Drawing.Point(539, 324);
+            this.Username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Username.Name = "Username";
+            this.Username.PasswordChar = '\0';
+            this.Username.PlaceholderText = "";
+            this.Username.SelectedText = "";
+            this.Username.Size = new System.Drawing.Size(390, 48);
+            this.Username.TabIndex = 16;
+            this.Username.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // PasswordTb
+            // Password
             // 
-            this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTb.DefaultText = "";
-            this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PasswordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PasswordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTb.Location = new System.Drawing.Point(539, 476);
-            this.PasswordTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.PasswordChar = '\0';
-            this.PasswordTb.PlaceholderText = "";
-            this.PasswordTb.SelectedText = "";
-            this.PasswordTb.Size = new System.Drawing.Size(390, 48);
-            this.PasswordTb.TabIndex = 17;
-            this.PasswordTb.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.Password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Password.DefaultText = "";
+            this.Password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Password.Location = new System.Drawing.Point(539, 476);
+            this.Password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Password.Name = "Password";
+            this.Password.PasswordChar = '\0';
+            this.Password.PlaceholderText = "";
+            this.Password.SelectedText = "";
+            this.Password.Size = new System.Drawing.Size(390, 48);
+            this.Password.TabIndex = 17;
+            this.Password.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // pictureBox1
             // 
@@ -170,8 +170,8 @@ namespace Mobile_Repairs_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 737);
-            this.Controls.Add(this.PasswordTb);
-            this.Controls.Add(this.userNameTb);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label3);
@@ -198,8 +198,8 @@ namespace Mobile_Repairs_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox userNameTb;
-        private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
+        private Guna.UI2.WinForms.Guna2TextBox Username;
+        private Guna.UI2.WinForms.Guna2TextBox Password;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
