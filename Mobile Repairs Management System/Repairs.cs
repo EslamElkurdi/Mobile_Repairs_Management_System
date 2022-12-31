@@ -80,7 +80,25 @@ namespace Mobile_Repairs_Management_System
 
         private void Delete_Click(object sender, EventArgs e)
         {
-
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Data");
+            }
+            else
+            {
+                try
+                {
+                    string Query = "delete from RepairTbl where RepCode = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    MessageBox.Show("Repair Deleted !!!!");
+                    showRepairs();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
 
         private void guna2TextBox4_TextChanged(object sender, EventArgs e)
