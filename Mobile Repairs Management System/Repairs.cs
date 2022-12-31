@@ -269,7 +269,9 @@ namespace Mobile_Repairs_Management_System
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            Parts obj = new Parts();
+            obj.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
